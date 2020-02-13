@@ -1,0 +1,10 @@
+SQL statement for A)
+
+SELECT Property.Name,
+
+    OwnerProperty.PropertyId,
+       OwnerProperty.OwnerId
+
+      from dbo.Property
+	   INNER JOIN OwnerProperty on Property.Id = dbo.OwnerProperty.PropertyId
+	   where dbo.OwnerProperty.OwnerId =1426
